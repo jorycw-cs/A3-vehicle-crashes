@@ -1,9 +1,9 @@
 import sys
 import os
 
-year = "2016"
+year = "2004"
 
-dir = "/homes/iws/jorycw/A3-Template/src/csv/"
+dir = "/homes/iws/jorycw/A3-vehicle-crashes/src/csv/"
 
 csv = dir + "time_type_" + year + ".csv"
 out = dir + year + "_r.csv"
@@ -45,7 +45,6 @@ with open(csv, "r") as f:
         output.append(time[0] + "," + info[1] + "," + info[2] + "," + info[3] + "," + info[4])
 
 f.close()
-
 
 
 with open(out, "w") as f:

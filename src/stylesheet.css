@@ -1,40 +1,54 @@
-/* AXES */
-/* ticks */
 .axis line{
-stroke: #706f6f;
-stroke-width: 0.5;
-shape-rendering: crispEdges;
+    stroke: #706f6f;
+    stroke-width: 0.5;
+    shape-rendering: crispEdges;
 }
 
-/* axis contour */
 .axis path {
-stroke: #706f6f;
-stroke-width: 0.7;
-shape-rendering: crispEdges;
+    stroke: #706f6f;
+    stroke-width: 0.7;
+    shape-rendering: crispEdges;
 }
 
-/* axis text */
 .axis text {
-fill: #2b2929;
-font-family: Georgia;
-font-size: 120%;
+    fill: #2b2929;
+    font-family: Georgia;
+    font-size: 120%;
 }
 
-/* LINE CHART */
 .line {
-fill: none;
-stroke: #d2d2d2;
+    fill: none;
+    stroke: #d2d2d2;
 }
 
 .ghost-line {
-fill: none;
-stroke: #d2d2d2;
-opacity: 0;
-stroke-width: 10;
+    fill: none;
+    stroke: #d2d2d2;
+    opacity: 0;
+    stroke-width: 10;
 }
 
-.serie_label {
-fill: #d2d2d2;
-font-family: Georgia;
-font-size: 80%;
+.series {
+    fill: #d2d2d2;
+    font-family: Georgia;
+    font-size: 80%;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="range"] {
+  width: 50%;
+  align-self: center;
+  margin: 0 auto;
+}
+
+#rangediv, #containerdiv, #container {
+  width: 100vw;
+  position: relative;
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
